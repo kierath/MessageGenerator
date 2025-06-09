@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="./styles.css" rel="stylesheet" type="text/css" />
+  <script src="./main.js"></script>
+  <title>Message Generator</title>  
+</head>
+
+<body>
+
+  <!--Nav bar-->
+  <header>
+    <h1>Affirmation Generator</h1>
+  </header>
+
+  
+  <main>
+    <div class="container">
+      <h2>How do you feel?</h2>
+      <select id="moodDropdown">
+        <option value="" disabled selected>Select a mood</option>
+        <option value="Bored">Bored</option>
+        <option value="Negative">Negative</option>
+        <option value="Stressed">Stressed</option>
+        <option value="Tired">Tired</option>
+      </select>
+      <p id="selectedMood"></p>
+      </div>
+
+      <div class="message-box">
+        <p id="message">Click the button to generate a positive message!</p>
+      </div>
+
+      <button id="generate-button">
+        Generate Message
+      </button>
+    </div>
+</body>
+
+<footer>
+</footer>
+
+</html>

@@ -1,0 +1,14 @@
+*{
+    background-color: #F0F8FF;
+}
+
+body {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }

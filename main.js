@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!mood) {
       message.textContent = 'Please select a mood first.';
-      moodImage.src = "";
+      moodImage.src = "resources/content.png";
       return;
     }
 

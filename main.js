@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const display = document.getElementById('selectedMood');
     const message = document.getElementById('affirmation');
     const button = document.getElementById('generateMessage');
+    const moodImage = document.getElementById('moodImage'); 
   
     const messages = {
       Bored: [
@@ -26,6 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
         "Let's take it easy and recharge our energy."
       ]
     };
+
+    const moodImages = {
+      Bored: "resources/bored.png",
+      Negative: "resources/negative.png",
+      Stressed: "resources/stressed.png",
+      Tired: "resources/tired.png"
+    };
   
     dropdown.addEventListener('change', function () {
       const selectedValue = this.value;
@@ -37,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
       if (!mood) {
         message.textContent = 'Please select a mood first.';
+        moodImage.src = "";
         return;
       }
   
@@ -45,5 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const randomMessage = moodMessages[randomIndex];
   
       message.textContent = randomMessage;
+
+      moodImage.src = moodImages[mood];
     });
   });  

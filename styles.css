@@ -1,7 +1,3 @@
-*{
-    background-color: #F0F8FF;
-}
-
 body {
     width: 400px;
     height: auto;
@@ -11,4 +7,54 @@ body {
     border-radius: 12px;
     font-family: sans-serif;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
+    background: #f9f4f8;
+    font-family: 'Press Start 2P', cursive;
+    color: #5a3e6f;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+select,
+button {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 0.7rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #5a3e6f;
+    background-color: #fdf4ff;
+    border: 1px solid #5a3e6f;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(90, 62, 111, 0.2);
+    cursor: pointer;
+}
+
+/* Optional: on focus */
+select:focus {
+    outline: none;
+    border-color: #a470b4;
+}
+
+
+.generateMessage:hover {
+    background-color: #ddc3f0;
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(183, 123, 244, 0.7);
+}
+
+#moodImage{
+    display: block;
+    width: 60%;
+    margin: 1rem auto;
+}

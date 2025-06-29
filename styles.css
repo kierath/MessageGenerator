@@ -66,8 +66,9 @@ a{
 
 /* Responsive for smaller screens */
 @media (max-width: 600px) {
-  .aboutContainer {
+  body {
+    width: 90%;
     justify-content: center;
-    margin: 0 0 -10px 0;
+    margin: 10px auto;
   }
 }

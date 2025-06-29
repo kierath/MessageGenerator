@@ -58,3 +58,16 @@ select:focus {
     width: 60%;
     margin: 1rem auto;
 }
+
+a{
+    text-decoration: none;
+    color: #5a3e6f;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .aboutContainer {
+    justify-content: center;
+    margin: 0 0 -10px 0;
+  }
+}
